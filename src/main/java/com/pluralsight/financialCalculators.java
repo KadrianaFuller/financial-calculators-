@@ -45,11 +45,10 @@ public class financialCalculators {
         double depositAmt= in.nextDouble();
 
         System.out.print("Enter Interest Rate: ");
-        double interestRate= in.nextDouble();
+        double interestRate= in.nextDouble() / (100*2);
 
         System.out.print("Enter Number of Years: ");
-        double numberOfYears = in.nextDouble();
-
+        double numberOfYears = in.nextDouble()* -12;
 
         /*
             It would display the future value and
@@ -60,8 +59,6 @@ public class financialCalculators {
             double interestRateEarned= interestRate/ 100;
             double futureValue = depositAmt * Math.pow(1*interestRate,numberOfYears);
 
-        System.out.printf("Future Value: $%.2f%n", futureValue);
-        System.out.printf("Total Interest: $%.2f%n", interestRateEarned);
 
 
         /*
